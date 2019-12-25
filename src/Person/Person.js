@@ -1,14 +1,13 @@
 import React from 'react';
 
-const person = () => {
+const person = (props) => {
   return (
-    <p>
-      This is first para
-    </p>
+    <div>
+      <p>I am {props.name} and my age is {props.age}. {props.children}</p>
+    </div>
   )
-}
+};
 
-if (a < 2) {
-  console.log("this");
-}
+
+export default person;
 
